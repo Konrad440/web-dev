@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+  div {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: disco1 1s linear infinite both;
+   }
+
+   div:nth-of-type(2){
+    animation: disco1 1s .2s linear infinite both ;
+   }
+   div:nth-of-type(3){
+    animation: disco1 1s .4s linear infinite both ;
+   }
+   div:nth-of-type(4){
+    animation: disco1 1s .6s linear infinite both ;
+   }
+   div:nth-of-type(5){
+    animation: disco1 1s .8s linear infinite both ;
+   }
+   div:nth-of-type(6){
+    animation: disco1 3s .2s linear infinite reverse ;
+   }
+
+
+@keyframes disco1 {
+    0%{
+        left: 0;
+        top: 0;
+        background-color: black;
+    }
+    25% {
+        top:0;
+        left: calc(100vw - 30px);
+        background-color: red;
+    }
+    50% {
+        left: calc(100vw - 30px);
+        top: calc(100vh - 30px);
+        background-color: green;
+    }
+    75% {
+        left: 0px;
+        top: calc(100vh - 30px);
+        background-color: blue;
+    }
+    
+}
